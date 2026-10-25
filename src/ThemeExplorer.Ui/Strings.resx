@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppTitle" xml:space="preserve">
+    <value>Theme Explorer</value>
+  </data>
+  <data name="MenuFile" xml:space="preserve">
+    <value>&amp;File</value>
+  </data>
+  <data name="MenuFileExit" xml:space="preserve">
+    <value>E&amp;xit</value>
+  </data>
+  <data name="MenuView" xml:space="preserve">
+    <value>&amp;View</value>
+  </data>
+  <data name="MenuViewShowAll" xml:space="preserve">
+    <value>Show all properties</value>
+  </data>
+  <data name="MenuViewAutoUpdate" xml:space="preserve">
+    <value>Automatically update on theme change</value>
+  </data>
+  <data name="MenuViewLanguage" xml:space="preserve">
+    <value>&amp;Language</value>
+  </data>
+  <data name="MenuLanguageEnglish" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="MenuLanguageChinese" xml:space="preserve">
+    <value>简体中文</value>
+  </data>
+  <data name="MenuHelp" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="MenuHelpAbout" xml:space="preserve">
+    <value>&amp;About Theme Explorer...</value>
+  </data>
+  <data name="MenuEditCopySelected" xml:space="preserve">
+    <value>Copy selected</value>
+  </data>
+  <data name="MenuEditCopyAll" xml:space="preserve">
+    <value>Copy all</value>
+  </data>
+  <data name="CopyEmpty" xml:space="preserve">
+    <value>No property values to copy.</value>
+  </data>
+  <data name="AboutTitle" xml:space="preserve">
+    <value>About Theme Explorer</value>
+  </data>
+  <data name="AboutText" xml:space="preserve">
+    <value>Theme Explorer 1.0
+
+A tool for exploring visual styles (themes) on Windows, as provided by UXTHEME.DLL.
+
+Based on the original C implementation by Martin Mitas (mity/theme-explorer).
+C# port: .NET Framework 4.0 / C# 6, AnyCPU.
+
+Released under the MIT License.</value>
+  </data>
+  <data name="LabelClass" xml:space="preserve">
+    <value>Class:</value>
+  </data>
+  <data name="LabelPart" xml:space="preserve">
+    <value>Part:</value>
+  </data>
+  <data name="LabelState" xml:space="preserve">
+    <value>State:</value>
+  </data>
+  <data name="ColumnType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="ColumnId" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="ColumnProperty" xml:space="preserve">
+    <value>Property</value>
+  </data>
+  <data name="ColumnValue" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="ColumnOrigin" xml:space="preserve">
+    <value>Origin</value>
+  </data>
+  <data name="NoBitmap" xml:space="preserve">
+    <value>no bitmap</value>
+  </data>
+  <data name="StatusReady" xml:space="preserve">
+    <value>Ready</value>
+  </data>
+  <data name="StatusTheme" xml:space="preserve">
+    <value>Theme: {0}</value>
+  </data>
+  <data name="StatusThemeInactive" xml:space="preserve">
+    <value>Visual styles are not enabled.</value>
+  </data>
+  <data name="StatusNoTheme" xml:space="preserve">
+    <value>This class is not defined by the current visual style.</value>
+  </data>
+  <data name="TooltipBackgroundBitmap" xml:space="preserve">
+    <value>Background bitmap (TMT_DIBDATA)</value>
+  </data>
+  <data name="TooltipGlyphBitmap" xml:space="preserve">
+    <value>Glyph bitmap (TMT_GLYPHDIBDATA)</value>
+  </data>
+  <data name="SampleText" xml:space="preserve">
+    <value>Foo Bar</value>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>Theme Explorer</value>
+  </data>
+  <data name="ErrorUnexpected" xml:space="preserve">
+    <value>An unexpected error occurred.
+
+{0}</value>
+  </data>
+  <data name="ErrorOpenTheme" xml:space="preserve">
+    <value>Failed to open the visual style for '{0}'.
+
+{1}</value>
+  </data>
+  <data name="PartTitle" xml:space="preserve">
+    <value>[{0}] {1}</value>
+  </data>
+  <data name="StateTitle" xml:space="preserve">
+    <value>[{0}] {1}</value>
+  </data>
+  <data name="OriginState" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="OriginPart" xml:space="preserve">
+    <value>part</value>
+  </data>
+  <data name="OriginClass" xml:space="preserve">
+    <value>class</value>
+  </data>
+  <data name="OriginGlobal" xml:space="preserve">
+    <value>global</value>
+  </data>
+  <data name="OriginUnknown" xml:space="preserve">
+    <value>[unknown]</value>
+  </data>
+  <data name="TypeEnum" xml:space="preserve">
+    <value>Enum</value>
+  </data>
+  <data name="TypeString" xml:space="preserve">
+    <value>String</value>
+  </data>
+  <data name="TypeInt" xml:space="preserve">
+    <value>Int</value>
+  </data>
+  <data name="TypeBool" xml:space="preserve">
+    <value>Bool</value>
+  </data>
+  <data name="TypeColor" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="TypeMargins" xml:space="preserve">
+    <value>Margins</value>
+  </data>
+  <data name="TypeFilename" xml:space="preserve">
+    <value>Filename</value>
+  </data>
+  <data name="TypeSize" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="TypePosition" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="TypeRect" xml:space="preserve">
+    <value>Rect</value>
+  </data>
+  <data name="TypeFont" xml:space="preserve">
+    <value>Font</value>
+  </data>
+  <data name="TypeIntList" xml:space="preserve">
+    <value>IntList</value>
+  </data>
+  <data name="TypeDiskStream" xml:space="preserve">
+    <value>DiskStream</value>
+  </data>
+  <data name="TypeStream" xml:space="preserve">
+    <value>Stream</value>
+  </data>
+  <data name="ValueTrue" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="ValueFalse" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="FormatInt" xml:space="preserve">
+    <value>{0} (0x{1:x})</value>
+  </data>
+  <data name="FormatColor" xml:space="preserve">
+    <value>{0},{1},{2} (#{3:x6})</value>
+  </data>
+  <data name="FormatMargins" xml:space="preserve">
+    <value>{0},{1} (horz), {2},{3} (vert)</value>
+  </data>
+  <data name="FormatSize" xml:space="preserve">
+    <value>{0}x{1}</value>
+  </data>
+  <data name="FormatPosition" xml:space="preserve">
+    <value>{0},{1}</value>
+  </data>
+  <data name="FormatRect" xml:space="preserve">
+    <value>{0},{1} - {2},{3} ({4}x{5})</value>
+  </data>
+  <data name="FormatStream" xml:space="preserve">
+    <value>&lt;stream {0} bytes&gt;</value>
+  </data>
+  <data name="FormatDiskStream" xml:space="preserve">
+    <value>&lt;disk stream {0} bytes&gt;</value>
+  </data>
+  <data name="IntListSeparator" xml:space="preserve">
+    <value>, </value>
+  </data>
+  <data name="FontWeightThin" xml:space="preserve">
+    <value>thin</value>
+  </data>
+  <data name="FontWeightExtraLight" xml:space="preserve">
+    <value>extralight</value>
+  </data>
+  <data name="FontWeightLight" xml:space="preserve">
+    <value>light</value>
+  </data>
+  <data name="FontWeightRegular" xml:space="preserve">
+    <value>regular</value>
+  </data>
+  <data name="FontWeightMedium" xml:space="preserve">
+    <value>medium</value>
+  </data>
+  <data name="FontWeightSemibold" xml:space="preserve">
+    <value>semibold</value>
+  </data>
+  <data name="FontWeightBold" xml:space="preserve">
+    <value>bold</value>
+  </data>
+  <data name="FontWeightExtraBold" xml:space="preserve">
+    <value>extrabold</value>
+  </data>
+  <data name="FontWeightHeavy" xml:space="preserve">
+    <value>heavy</value>
+  </data>
+  <data name="FontWeightUnknown" xml:space="preserve">
+    <value>??</value>
+  </data>
+  <data name="FontItalic" xml:space="preserve">
+    <value>italic</value>
+  </data>
+  <data name="FontUnderline" xml:space="preserve">
+    <value>underlined</value>
+  </data>
+</root>

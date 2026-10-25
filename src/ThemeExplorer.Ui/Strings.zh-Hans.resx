@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppTitle" xml:space="preserve">
+    <value>主题浏览器</value>
+  </data>
+  <data name="MenuFile" xml:space="preserve">
+    <value>文件(&amp;F)</value>
+  </data>
+  <data name="MenuFileExit" xml:space="preserve">
+    <value>退出(&amp;X)</value>
+  </data>
+  <data name="MenuView" xml:space="preserve">
+    <value>视图(&amp;V)</value>
+  </data>
+  <data name="MenuViewShowAll" xml:space="preserve">
+    <value>显示所有属性</value>
+  </data>
+  <data name="MenuViewAutoUpdate" xml:space="preserve">
+    <value>主题更改时自动更新</value>
+  </data>
+  <data name="MenuViewLanguage" xml:space="preserve">
+    <value>语言(&amp;L)</value>
+  </data>
+  <data name="MenuLanguageEnglish" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="MenuLanguageChinese" xml:space="preserve">
+    <value>简体中文</value>
+  </data>
+  <data name="MenuHelp" xml:space="preserve">
+    <value>帮助(&amp;H)</value>
+  </data>
+  <data name="MenuHelpAbout" xml:space="preserve">
+    <value>关于主题浏览器(&amp;A)...</value>
+  </data>
+  <data name="MenuEditCopySelected" xml:space="preserve">
+    <value>复制选中项</value>
+  </data>
+  <data name="MenuEditCopyAll" xml:space="preserve">
+    <value>复制全部</value>
+  </data>
+  <data name="CopyEmpty" xml:space="preserve">
+    <value>没有可复制的属性值。</value>
+  </data>
+  <data name="AboutTitle" xml:space="preserve">
+    <value>关于主题浏览器</value>
+  </data>
+  <data name="AboutText" xml:space="preserve">
+    <value>主题浏览器 1.0
+
+用于浏览和检查 Windows 视觉样式（主题）的工具，数据来自 UXTHEME.DLL。
+
+基于 Martin Mitas 的原始 C 实现（mity/theme-explorer）。
+C# 移植版本：.NET Framework 4.0 / C# 6，AnyCPU。
+
+遵循 MIT 许可证发布。</value>
+  </data>
+  <data name="LabelClass" xml:space="preserve">
+    <value>类：</value>
+  </data>
+  <data name="LabelPart" xml:space="preserve">
+    <value>部件：</value>
+  </data>
+  <data name="LabelState" xml:space="preserve">
+    <value>状态：</value>
+  </data>
+  <data name="ColumnType" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="ColumnId" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="ColumnProperty" xml:space="preserve">
+    <value>属性</value>
+  </data>
+  <data name="ColumnValue" xml:space="preserve">
+    <value>值</value>
+  </data>
+  <data name="ColumnOrigin" xml:space="preserve">
+    <value>来源</value>
+  </data>
+  <data name="NoBitmap" xml:space="preserve">
+    <value>无位图</value>
+  </data>
+  <data name="StatusReady" xml:space="preserve">
+    <value>就绪</value>
+  </data>
+  <data name="StatusTheme" xml:space="preserve">
+    <value>主题：{0}</value>
+  </data>
+  <data name="StatusThemeInactive" xml:space="preserve">
+    <value>未启用视觉样式。</value>
+  </data>
+  <data name="StatusNoTheme" xml:space="preserve">
+    <value>当前视觉样式未定义此类。</value>
+  </data>
+  <data name="TooltipBackgroundBitmap" xml:space="preserve">
+    <value>背景位图（TMT_DIBDATA）</value>
+  </data>
+  <data name="TooltipGlyphBitmap" xml:space="preserve">
+    <value>字形位图（TMT_GLYPHDIBDATA）</value>
+  </data>
+  <data name="SampleText" xml:space="preserve">
+    <value>示例文本</value>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>主题浏览器</value>
+  </data>
+  <data name="ErrorUnexpected" xml:space="preserve">
+    <value>发生意外错误。
+
+{0}</value>
+  </data>
+  <data name="ErrorOpenTheme" xml:space="preserve">
+    <value>无法为「{0}」打开视觉样式。
+
+{1}</value>
+  </data>
+  <data name="PartTitle" xml:space="preserve">
+    <value>[{0}] {1}</value>
+  </data>
+  <data name="StateTitle" xml:space="preserve">
+    <value>[{0}] {1}</value>
+  </data>
+  <data name="OriginState" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="OriginPart" xml:space="preserve">
+    <value>部件</value>
+  </data>
+  <data name="OriginClass" xml:space="preserve">
+    <value>类</value>
+  </data>
+  <data name="OriginGlobal" xml:space="preserve">
+    <value>全局</value>
+  </data>
+  <data name="OriginUnknown" xml:space="preserve">
+    <value>[未知]</value>
+  </data>
+  <data name="TypeEnum" xml:space="preserve">
+    <value>枚举</value>
+  </data>
+  <data name="TypeString" xml:space="preserve">
+    <value>字符串</value>
+  </data>
+  <data name="TypeInt" xml:space="preserve">
+    <value>整数</value>
+  </data>
+  <data name="TypeBool" xml:space="preserve">
+    <value>布尔</value>
+  </data>
+  <data name="TypeColor" xml:space="preserve">
+    <value>颜色</value>
+  </data>
+  <data name="TypeMargins" xml:space="preserve">
+    <value>边距</value>
+  </data>
+  <data name="TypeFilename" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="TypeSize" xml:space="preserve">
+    <value>尺寸</value>
+  </data>
+  <data name="TypePosition" xml:space="preserve">
+    <value>位置</value>
+  </data>
+  <data name="TypeRect" xml:space="preserve">
+    <value>矩形</value>
+  </data>
+  <data name="TypeFont" xml:space="preserve">
+    <value>字体</value>
+  </data>
+  <data name="TypeIntList" xml:space="preserve">
+    <value>整数列表</value>
+  </data>
+  <data name="TypeDiskStream" xml:space="preserve">
+    <value>磁盘流</value>
+  </data>
+  <data name="TypeStream" xml:space="preserve">
+    <value>流</value>
+  </data>
+  <data name="ValueTrue" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="ValueFalse" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="FormatInt" xml:space="preserve">
+    <value>{0} (0x{1:x})</value>
+  </data>
+  <data name="FormatColor" xml:space="preserve">
+    <value>{0},{1},{2} (#{3:x6})</value>
+  </data>
+  <data name="FormatMargins" xml:space="preserve">
+    <value>{0},{1}（水平），{2},{3}（垂直）</value>
+  </data>
+  <data name="FormatSize" xml:space="preserve">
+    <value>{0}×{1}</value>
+  </data>
+  <data name="FormatPosition" xml:space="preserve">
+    <value>{0},{1}</value>
+  </data>
+  <data name="FormatRect" xml:space="preserve">
+    <value>{0},{1} - {2},{3}（{4}×{5}）</value>
+  </data>
+  <data name="FormatStream" xml:space="preserve">
+    <value>&lt;流 {0} 字节&gt;</value>
+  </data>
+  <data name="FormatDiskStream" xml:space="preserve">
+    <value>&lt;磁盘流 {0} 字节&gt;</value>
+  </data>
+  <data name="IntListSeparator" xml:space="preserve">
+    <value>、</value>
+  </data>
+  <data name="FontWeightThin" xml:space="preserve">
+    <value>极细</value>
+  </data>
+  <data name="FontWeightExtraLight" xml:space="preserve">
+    <value>超细</value>
+  </data>
+  <data name="FontWeightLight" xml:space="preserve">
+    <value>细体</value>
+  </data>
+  <data name="FontWeightRegular" xml:space="preserve">
+    <value>常规</value>
+  </data>
+  <data name="FontWeightMedium" xml:space="preserve">
+    <value>中等</value>
+  </data>
+  <data name="FontWeightSemibold" xml:space="preserve">
+    <value>半粗</value>
+  </data>
+  <data name="FontWeightBold" xml:space="preserve">
+    <value>粗体</value>
+  </data>
+  <data name="FontWeightExtraBold" xml:space="preserve">
+    <value>特粗</value>
+  </data>
+  <data name="FontWeightHeavy" xml:space="preserve">
+    <value>黑体</value>
+  </data>
+  <data name="FontWeightUnknown" xml:space="preserve">
+    <value>??</value>
+  </data>
+  <data name="FontItalic" xml:space="preserve">
+    <value>斜体</value>
+  </data>
+  <data name="FontUnderline" xml:space="preserve">
+    <value>下划线</value>
+  </data>
+</root>

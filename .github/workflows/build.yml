@@ -1,0 +1,63 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build (Release / Any CPU)
+    runs-on: windows-2022
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Install .NET Framework 4.0 reference assemblies
+        shell: pwsh
+        run: |
+          $url = 'https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies.net40/1.0.3/microsoft.netframework.referenceassemblies.net40.1.0.3.nupkg'
+          $nupkg = Join-Path $env:TEMP 'net40-reference-assemblies.nupkg'
+          $zip = Join-Path $env:TEMP 'net40-reference-assemblies.zip'
+          $packageRoot = Join-Path $env:TEMP 'net40-reference-assemblies'
+          Invoke-WebRequest -Uri $url -OutFile $nupkg
+          Copy-Item $nupkg $zip -Force
+          if (Test-Path $packageRoot) { Remove-Item $packageRoot -Recurse -Force }
+          Expand-Archive -Path $zip -DestinationPath $packageRoot -Force
+          $source = Join-Path $packageRoot 'build\.NETFramework\v4.0'
+          $destination = 'C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0'
+          if (-not (Test-Path $source)) {
+            throw "Reference assemblies not found: $source"
+          }
+          New-Item -ItemType Directory -Force $destination | Out-Null
+          Copy-Item "$source\*" -Destination $destination -Recurse -Force
+
+      - name: Build
+        shell: pwsh
+        run: |
+          powershell -NoProfile -ExecutionPolicy Bypass `
+            -File .\build.ps1 -Configuration Release
+
+      - name: Upload build artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ThemeExplorer-${{ github.sha }}
+          if-no-files-found: warn
+          path: |
+            src/ThemeExplorer.App/bin/Release/
+            src/ThemeExplorer.Wpf/bin/Release/
