@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+    tags:
+      - 'v*'
   pull_request:
   workflow_dispatch:
 
@@ -61,3 +63,31 @@ jobs:
           path: |
             src/ThemeExplorer.App/bin/Release/
             src/ThemeExplorer.Wpf/bin/Release/
+
+  release:
+    name: Publish GitHub Release (tag)
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: ThemeExplorer-${{ github.sha }}
+          path: release-files
+
+      - name: Package release files
+        run: |
+          cd release-files
+          zip -r ThemeExplorer-win32.zip .
+
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: release-files/ThemeExplorer-win32.zip
+          generate_release_notes: true
+          fail_on_unmatched_files: true
